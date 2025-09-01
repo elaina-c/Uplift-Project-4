@@ -8,6 +8,7 @@ import RecommendAnime from "../../components/AnimeGenre/RecommendAnime";
 import Intro from "../../components/Intro/Intro";
 import AnimeCard from "../../components/AnimeCard/AnimeCard";
 import styles from "./Search.module.css";
+import StyleMedia from "./SearchMedia.module.css";
 import BackToTop from "../../components/BackToTop/BackToTop";
 
 const Search = () => {
@@ -83,7 +84,7 @@ const Search = () => {
         });
       }
 
-      setResults((prev) => [...prev, ...filteredResults]); // ✅ append
+      setResults((prev) => [...prev, ...filteredResults]);
       setPage(nextPage);
       setHasNextPage(hasNext);
     } catch (err) {
@@ -96,9 +97,11 @@ const Search = () => {
 
   return (
     <div className={styles.container}>
-      <Intro />
+      <div className={StyleMedia.intro}>
+        <Intro />
+      </div>
 
-      <h1 className={styles.h1}>SEARCH YOUR ANIME</h1>
+      <h1 className={`${styles.h1} ${StyleMedia.h1}`}>SEARCH YOUR ANIME</h1>
 
       <AnimeFilter
         genre={genre}
@@ -107,16 +110,21 @@ const Search = () => {
         setYear={setYear}
       />
 
-      <form onSubmit={handleSearch} className={styles.searchContainer}>
+      <form
+        onSubmit={handleSearch}
+        className={`${styles.searchContainer} ${StyleMedia.searchContainer}`}
+      >
         <input
           type="text"
-          className={styles.searchInput}
+          className={`${styles.searchInput} ${StyleMedia.searchInput}`}
           placeholder="Search by title..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-
-        <button type="submit" className={styles.searchButton}>
+        <button
+          type="submit"
+          className={`${styles.searchButton} ${StyleMedia.searchButton}`}
+        >
           Search
         </button>
       </form>
@@ -124,7 +132,7 @@ const Search = () => {
       {loading && <p className={styles.loading}>Loading...</p>}
       {error && <p className={styles.error}>{error}</p>}
 
-      <div className={styles.resultsGrid}>
+      <div className={`${styles.resultsGrid} ${StyleMedia.resultsGrid}`}>
         {Array.isArray(results) && results.length > 0
           ? results.map((anime) => (
               <AnimeCard

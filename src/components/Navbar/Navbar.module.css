@@ -41,7 +41,7 @@
   }
 
   .logo {
-    font-size: 1.2rem;
+    font-size: 13px;
     color: #ff4081;
     margin: 0;
   }
@@ -57,6 +57,6 @@
   .navLinks a {
     margin: 0;
     padding: 4px 8px;
-    font-size: 0.9rem;
+    font-size: 10px;
   }
 }

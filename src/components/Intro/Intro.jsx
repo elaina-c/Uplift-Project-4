@@ -28,7 +28,7 @@ const Intro = () => {
               <b>AI LOVE ANIME</b>
             </h2>
             <p>
-              Find your next
+              Find your next{" "}
               <span className={`${styles.highlight} ${mediaStyles.highlight}`}>
                 Favorite anime
               </span>{" "}
@@ -36,12 +36,14 @@ const Intro = () => {
               <span
                 className={`${styles.highlight2} ${mediaStyles.highlight2}`}
               >
+                {" "}
                 Search
               </span>
               , explore what's trending, and uncover hidden
               <span
                 className={`${styles.highlight3} ${mediaStyles.highlight3}`}
               >
+                {" "}
                 stars
               </span>
               .
