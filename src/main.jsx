@@ -7,7 +7,7 @@ import { FavoritesProvider } from "./context/FavoritesContext";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <FavoritesProvider>
-      <BrowserRouter basename="/Uplift-Project-4">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </FavoritesProvider>
