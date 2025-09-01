@@ -30,14 +30,12 @@ const Intro = () => {
             <p>
               Find your next
               <span className={`${styles.highlight} ${mediaStyles.highlight}`}>
-                {" "}
                 Favorite anime
               </span>{" "}
-              among the latest and greatest in the anime world! go to top
+              among the latest and greatest in the anime world! Go to top
               <span
                 className={`${styles.highlight2} ${mediaStyles.highlight2}`}
               >
-                {" "}
                 Search
               </span>
               , explore what's trending, and uncover hidden
