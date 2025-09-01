@@ -1,0 +1,118 @@
+.contacts h2 {
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactMe:hover h2 {
+  text-shadow: 0 0 10px #eb55ee, 0 0 20px #eb55ee;
+  color: #eb55ee;
+}
+
+.contactCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.contactTitle {
+  color: #ec1869;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  width: 100px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.card span {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.iconLink {
+  color: white;
+}
+
+.icon {
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.iconLink:hover .icon {
+  transform: translateY(-10px) scale(1.2);
+  color: #eb55ee;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.feedbackTitle {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #ec1869;
+}
+
+.feedbackLink:hover .feedbackTitle {
+  text-shadow: 0 0 10px #eb55ee, 0 0 20px #eb55ee;
+  color: #eb55ee;
+}
+
+.messageBtn {
+  padding: 12px 25px;
+  background-color: #eb55ee;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.messageBtn:hover {
+  background-color: #eb55ee;
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 0 15px #eb55ee;
+}
+
+.contactForm {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.status {
+  color: #98e3cf;
+}
+
+.contactForm input,
+textarea {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,49 @@
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  margin: 10px;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.brand h2 {
+  font-size: 2rem;
+  color: #ec55c3;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.logoLink:hover .logo {
+  text-shadow: 0 0 10px #eb55ee, 0 0 20px #eb55ee;
+  color: #eb55ee;
+  text-decoration: none;
+}
+
+.brand p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}

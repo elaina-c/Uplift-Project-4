@@ -1,0 +1,114 @@
+.card {
+  width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s;
+  background: #221322;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  flex: 1;
+  margin-right: 10px;
+  color: #ddd;
+}
+
+.favoriteBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.favoriteBtn:hover {
+  transform: scale(1.2);
+}
+
+.favorited {
+  color: red;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 140px;
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 120px;
+    padding: 8px;
+  }
+
+  .image {
+    height: 160px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .favoriteBtn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100px;
+    padding: 6px;
+  }
+
+  .image {
+    height: 140px;
+  }
+
+  .title {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .favoriteBtn {
+    font-size: 14px;
+  }
+}

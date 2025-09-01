@@ -1,0 +1,103 @@
+.container {
+  margin-top: 40px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #4338ca;
+  text-align: left;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #4338ca transparent;
+  scroll-snap-type: x mandatory;
+}
+
+.scrollContainer > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  max-height: 290px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: #4338ca;
+  border-radius: 10px;
+}
+
+.loading {
+  margin: 15px 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.loadMore {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #4338ca;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.loadMore:hover {
+  background: #4338ca;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .scrollContainer {
+    gap: 10px;
+  }
+
+  .loadMore {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .scrollContainer {
+    gap: 12px;
+  }
+
+  .loadMore {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .scrollContainer {
+    gap: 20px;
+  }
+
+  .loadMore {
+    font-size: 1rem;
+    padding: 12px 22px;
+  }
+}

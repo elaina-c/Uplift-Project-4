@@ -1,0 +1,111 @@
+main {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.websiteIntro {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.aboutWebsite {
+  width: 50%;
+  min-width: 250px;
+  max-width: 600px;
+  height: 400px;
+  background: linear-gradient(135deg, #2e003e, #081d3d, #61328a, #140e5e);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 15px #00000080;
+  margin-left: -200px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.introText {
+  font-size: 30px;
+  color: #fff;
+  text-align: left;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.introText h2,
+.introText p {
+  color: #fff;
+}
+
+.introText b {
+  color: #cb8aff;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px #3d0861;
+  display: inline-block;
+}
+
+.highlight {
+  font-size: 40px;
+  font-weight: bold;
+  color: #9267e2;
+}
+
+.highlight2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e267d8;
+}
+
+.highlight3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #a1b1f7;
+}
+
+.imgIntroContainer {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 30px;
+  border: 1px solid #fffdfd;
+}
+
+.leftImg {
+  width: 500px;
+  height: 480px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.XiaoLogo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #470761;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px #0000004d;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 98%;
+  transform: translate(-179%, 30%);
+}

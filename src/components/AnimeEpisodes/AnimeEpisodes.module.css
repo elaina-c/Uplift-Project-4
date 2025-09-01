@@ -1,0 +1,107 @@
+.episodesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.episodeCard {
+  background: #1f1f1f; /* Darker card background like Wix template */
+  color: #fff; /* White text */
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.episodeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.episodeCard h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.episodeCard p {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.episodeCard a {
+  align-self: flex-start;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #e50914;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.episodeCard a:hover {
+  background: #b0060f;
+}
+
+@media (max-width: 1024px) {
+  .episodesGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .episodeCard h4 {
+    font-size: 1rem;
+  }
+
+  .episodeCard p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .episodesGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .episodeCard {
+    padding: 12px;
+  }
+
+  .episodeCard h4 {
+    font-size: 0.95rem;
+  }
+
+  .episodeCard p {
+    font-size: 0.8rem;
+  }
+
+  .episodeCard a {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .episodesGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .episodeCard h4 {
+    font-size: 0.9rem;
+  }
+
+  .episodeCard p {
+    font-size: 0.75rem;
+  }
+
+  .episodeCard a {
+    font-size: 0.8rem;
+    padding: 4px 7px;
+  }
+}
